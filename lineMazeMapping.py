@@ -233,11 +233,9 @@ class robot:
                  unexploredNodes.append(self.pointArray[node])
 
         return unexploredNodes
-
-    def turn(self):
-        pass
     
     def move(self):
+        #Move the robot
         print(str(self.position) + " --> "+ str(self.nextPoint))
         self.moveDistance = max(abs(self.nextPoint-self.position))
         self.position = self.nextPoint
